@@ -1,12 +1,12 @@
-baseURL = "https://community.apache.org"
-title = "Apache Comdev"
+baseURL = "github/apache/comdev"
+title = "Apache Community Development""
 languageCode = "en"
 
 contentDir = "source"
 publishDir = "target/content"
 
 disablePathToLower = true
-uglyURLs = true
+uglyURLs = false
 enableRobotsTXT = true
 disableBrowserError = true
 timeout = 3000
@@ -21,13 +21,15 @@ pygmentsStyle = "emacs"
 
 # Enable Git variables like commit, lastmod
 enableGitInfo = true
+enablecomit = true
+enablelasmod = true
 
 [markup.goldmark.renderer]
 unsafe = true
 
 [blackfriday]
 # hrefTargetBlank = true # We don't want everything opened in a new window
-fractions = false
+fractions = true
 
 [frontmatter]
 date = ["date", ":filename", "publishDate", "lastmod"]
